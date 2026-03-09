@@ -28,7 +28,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-    developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
+    implementation 'org.springframework.boot:spring-boot-starter-restclient'
+//    developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'com.mysql:mysql-connector-j'
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
@@ -44,7 +45,9 @@ dependencies {
     testImplementation 'org.testcontainers:testcontainers-mongodb'
     testImplementation 'org.testcontainers:testcontainers-mysql'
     testImplementation 'org.testcontainers:testcontainers-oracle-free'
+    testImplementation 'org.springframework.boot:spring-boot-starter-restclient-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
 }
 
 tasks.named('test') {
