@@ -1,5 +1,12 @@
+import {
+    Form,
+    useNavigate,
+    useNavigation,
+    useActionData,
+    redirect
+} from 'react-router';
+
 import classes from './EventForm.module.css';
-import {Form, redirect, useActionData, useNavigate, useNavigation} from "react-router";
 
 function EventForm({ method, event }) {
     const data = useActionData();
@@ -106,7 +113,7 @@ export async function action({ request, params }) {
     }
 
     if (!response.ok) {
-        throw ({ message: 'Could not save event.' }, { status: 500 });
+        throw ({ message: 'Could not save event.', status: 500 });
     }
 
     return redirect('/events');

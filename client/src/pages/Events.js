@@ -26,8 +26,7 @@ async function loadEvents() {
         //   status: 500,
         // });
         throw (
-            { message: 'Could not fetch events.' },
-            {
+            { message: 'Could not fetch events.',
                 status: 500,
             }
         );

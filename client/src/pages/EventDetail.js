@@ -34,8 +34,7 @@ async function loadEvent(id) {
 
     if (!response.ok) {
         throw (
-            { message: 'Could not fetch details for selected event.' },
-            {
+            { message: 'Could not fetch details for selected event.',
                 status: 500,
             }
         );
@@ -54,8 +53,7 @@ async function loadEvents() {
         //   status: 500,
         // });
         throw (
-            { message: 'Could not fetch events.' },
-            {
+            { message: 'Could not fetch events.',
                 status: 500,
             }
         );
@@ -82,8 +80,7 @@ export async function action({ params, request }) {
 
     if (!response.ok) {
         throw (
-            { message: 'Could not delete event.' },
-            {
+            { message: 'Could not delete event.',
                 status: 500,
             }
         );

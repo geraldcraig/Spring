@@ -1,5 +1,5 @@
-import {Form} from "react-router";
-import {useState} from "react";
+import { useState } from 'react';
+import { Form } from 'react-router';
 
 import classes from './AuthForm.module.css';
 
