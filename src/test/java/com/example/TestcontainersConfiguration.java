@@ -1,4 +1,4 @@
-package com.example.spring;
+package com.example;
 
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
